@@ -25,12 +25,12 @@ except :
 
 
 import string
-vokaali=["a","e","u","o","i","ü","ö","õ","ä"]
-konsonanti="qwrtpsdfghklzxcvbnm"
+vokaali=["a","e","u","o","i","Ã¼","Ã¶","Ãµ","Ã¤"]
+konsonanti="qwrtpsdfghklzxcvbnmj"
 markid=string.punctuation
 v=k=m=t=0
 while True:
-    tekst=input("Sisesta sõna või lause: ")
+    tekst=input("Sisesta sÃµna vÃµi lause: ")
     if tekst.isdigit():
         break
     else:
@@ -47,6 +47,8 @@ while True:
     print("Vokaali:", v)
     print("konsonanti:",k)
 
+
+nimi=input("nimeta 5 nimi: ")
 
 
 
