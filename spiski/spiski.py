@@ -101,7 +101,20 @@ for i in range (0,kogus,1):
 print("\n", num_list)
 
 
-
+#6
+kokku=randint(2,20)
+print("itog v poradke ",kokku,"element")
+num_list=[]
+for i in range(kokku):
+    num_list.append(round(random()*1000,2))
+print(num_list)
+max_=max(num_list)
+n=num_list.index(max_)
+print("\t",max_,"pozichia:",n+1)
+num_list.pop(n)
+max_=max_/len(num_list)
+num_list.insert(n,max_)
+print(num_list)
 
 
 
