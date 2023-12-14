@@ -68,11 +68,37 @@ while True:
         print("ne pravilno")
 print("analiz indexa")
 index_list=list(str(index))
-s1=int(index_list[0]) #1->0 Tallinn c indexa 0
+s1=int(index_list[0]) #1 Tallinn c indexa 0
 print("index {0} on {1} piirkonnas".format(index,indexid[s1-1]))
         
 
 
+#5
+
+from random import *
+
+kokku=randint(2,20)
+num_list=[]
+for i in range(kokku):
+    num_list.append(randint(-100,100))
+print(num_list)
+print()
+while True:
+    try:
+        kogus=int(input("skolko pozitsii ?"))
+        if kogus<=kokku/2:
+            break
+    except:
+        print("poprobui eshe raz")
+
+for i in range (0,kogus,1):
+    X_tmp= num_list[i]
+    print(str(i)," ", str(num_list[i]),"  ",str(num_list[(len(num_list)-i)-1]),"\n")
+    print(X_tmp, "\n")
+
+    num_list[i]= num_list[(len(num_list)-i)-1]
+    num_list[(len(num_list)-i)-1]= X_tmp
+print("\n", num_list)
 
 
 
