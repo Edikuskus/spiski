@@ -49,13 +49,31 @@ while True:
 
 
 
-#2
-l=[11,2,3,4,5,6,2,3,9,2,2,2,2]
-l_set=set(l)
-print(l_set)
-for e in l_set:
-    print(e*"*")
-nimi=input("nimeta 5 nimi: ")
+##2
+#l=[11,2,3,4,5,6,2,3,9,2,2,2,2]
+#l_set=set(l)
+#print(l_set)
+#for e in l_set:
+#    print(e*"*")
+
+
+indexid=["Tallinn","Narva, Narva-Jõesuu","Kohtla-Järve","Ida-Virumaa, Lääne-Virumaa, Jõgevamaa","Tartu linn", "Tartumaa, Põlvamaa, Võrumaa, Valgamaa" , "Viljandimaa, Järvamaa, Harjumaa, Raplamaa" ,"Pärnumaa"," Läänemaa, Hiiumaa, Saaremaa"]
+
+while True:
+    try:
+        index=int(input("privet, napishi svoi indeks "))  #eto ciframi 123
+        if len(str(index))==5: #eto v skobkah "123"
+               break
+    except:
+        print("ne pravilno")
+print("analiz indexa")
+index_list=list(str(index))
+s1=int(index_list[0]) #1->0 Tallinn c indexa 0
+print("index {0} on {1} piirkonnas".format(index,indexid[s1-1]))
+        
+
+
+
 
 
 
