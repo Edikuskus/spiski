@@ -48,7 +48,17 @@ while True:
     print("konsonanti:",k)
 
 
+
+#2
+l=[11,2,3,4,5,6,2,3,9,2,2,2,2]
+l_set=set(l)
+print(l_set)
+for e in l_set:
+    print(e*"*")
 nimi=input("nimeta 5 nimi: ")
+
+
+
 
 
 
