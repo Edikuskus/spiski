@@ -117,6 +117,23 @@ num_list.insert(n,max_)
 print(num_list)
 
 
+#7
+print("zadanie 7")
+
+numeric = randint(2,20)
+numeric_list=[]
+for i in range(numeric):
+    numeric_list.append(randint(-1000,1000))
+print(numeric_list)
+print()
+print("Len of numeric_list - " + str(len(numeric_list)))
+for i in range(0,numeric,1):
+    numeric_list[i]=abs(numeric_list[i])
+
+numeric_list.soft()
+print(numeric_list)
+numeric_list.soft(reverse=True)
+print(numeric_list)
 
 
 
